@@ -1,0 +1,3 @@
+<design:component label="Flexipage Component Template">
+    <design:attribute name="myAttribute" label="My Attribute" description="An attribute from the template." />
+</design:component>

@@ -1,5 +1,5 @@
 ({
 	handleInit : function(component, event, helper) {
-		helper.blankFunc('Hello Lightning');
+		helper.helperMethod('Hello Lightning');
 	}
 })
