@@ -1,0 +1,12 @@
+<aura:component description="Component that displays a list of records. Can be used for Lightning App Builder." controller="ListComponentController" implements="flexipage:availableForAllPageTypes">
+	<aura:attribute name="targetRecords" type="Object[]" description="The records that will be displayed." />
+	
+	<aura:handler name="init" value="{!this}" action="{!c.handleInit}"/>
+	
+	<aura:registerEvent name="itemSelect" type="c:listComponentItemSelect" />
+	
+	<aura:iteration items="{!v.targetRecords}" var="record">
+		<a href="" onclick="{!c.handleItemClick}" data-recordid="{!record.Id}">{!record.Name}</a>
+        <br />
+	</aura:iteration>
+</aura:component>

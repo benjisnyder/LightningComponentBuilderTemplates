@@ -1,0 +1,13 @@
+<aura:component description="Component that displays a record. Can be used for Lightning App Builder." controller="RecordComponentController" implements="flexipage:availableForAllPageTypes">
+	<aura:attribute name="targetRecord" type="Object" description="The record that will be displayed." />
+	<aura:attribute name="recordId" type="String" required="true" description="The ID of the record to display." />
+	
+	<aura:handler name="init" value="{!this}" action="{!c.handleInit}"/>
+	
+	<aura:if isTrue="{!empty(v.targetRecord)}">
+	
+		<aura:set attribute="else">
+			{!v.targetRecord.Name}
+		</aura:set>
+	</aura:if>
+</aura:component>

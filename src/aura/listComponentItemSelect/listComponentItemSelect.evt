@@ -1,0 +1,3 @@
+<aura:event type="COMPONENT" description="Event fired from listComponent.cmp to signal that an item has been selected.">
+	<aura:attribute name="recordId" type="String" description="The ID of the record being selected" />
+</aura:event>

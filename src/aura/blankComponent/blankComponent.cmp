@@ -1,4 +1,4 @@
-<aura:component description="New blank component." access="PRIVATE">
+<aura:component description="New blank component.">
 	<aura:attribute name="myAttribute" type="String" required="false" description="Placeholder attribute" />
 	
 	<aura:handler name="init" value="{!this}" action="{!c.handleInit}"/>
