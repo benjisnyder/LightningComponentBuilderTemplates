@@ -4,8 +4,8 @@
 	},
 	
 	handleItemClick : function(component, event, helper) {
-		var recordId = event.target.dataset.recordId;
-		
+		var recordId = event.target.dataset.recordid;
+
 		helper.fireItemClick(component, recordId);
 	}
 })

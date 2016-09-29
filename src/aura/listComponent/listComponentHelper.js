@@ -4,9 +4,9 @@
         
         action.setCallback(this, function(response){
             var state = response.getState();
-            
+
             if (state === "SUCCESS") {
-                cmp.set("v.targetRecords", response.getReturnValue());
+                component.set("v.targetRecords", response.getReturnValue());
             }
         });
         
